@@ -52,9 +52,8 @@ public class LoginPage {
 
 			pwd.clear();
 			pwd.sendKeys(passsword);
-
-
 		}
+		driver.close();
 	}
 
 }

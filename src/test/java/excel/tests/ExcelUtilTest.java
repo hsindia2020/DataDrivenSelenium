@@ -33,7 +33,6 @@ public class ExcelUtilTest {
 		System.out.println(reader.getCellData("Regsitration", "phonenumber", 2));
 		System.out.println(reader.getCellData("Regsitration", "age", 2));
 
-
 	}
 
 }
