@@ -14,7 +14,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jdk.version>1.8</jdk.version>
 
-	</properties>
+  <sonar.projectKey>hsindia2020_DataDrivenSelenium</sonar.projectKey>
+  <sonar.organization>hsindia2020</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
 
 	<build>
 		<finalName>ExcelUtil</finalName>
