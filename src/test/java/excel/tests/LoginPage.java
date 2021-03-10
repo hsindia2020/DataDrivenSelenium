@@ -1,21 +1,25 @@
 package excel.tests;
 
+import java.time.LocalDate;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import com.excel.lib.util.Xls_Reader;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LoginPage {
+	@Test
+	public static void LoginTest() {
 
-	public static void main(String[] args) {
+		String stat = "Status";
 
-
+		LocalDate dd = LocalDate.now();
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://classic.crmpro.com/");
@@ -30,10 +34,16 @@ public class LoginPage {
 
 		int rowCount = reader.getRowCount(sheetName);
 
+		// Writing the Data Set the values
+		reader.addColumn(sheetName, stat + dd);
+
 		for(int rowNum=2; rowNum<=rowCount; rowNum++){
 
 			String loginId = reader.getCellData(sheetName, "username", rowNum);
 			String passsword = reader.getCellData(sheetName, "password", rowNum);
+
+			// Writing the Data into the Excel sheet
+			reader.setCellData(sheetName, stat + dd, rowNum, "Pass");
 
 			System.out.println(loginId + " " + passsword);
 

@@ -20,8 +20,6 @@
 		<finalName>ExcelUtil</finalName>
 		<plugins>
 
-
-
 			<!-- Set a compiler level -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -30,6 +28,12 @@
 				<configuration>
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
+					
+					<suiteXmlFiles>
+						<!-- <suiteXmlFile>${testxml}</suiteXmlFile> -->
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					
 				</configuration>
 			</plugin>
 
@@ -120,6 +124,13 @@
 			<scope>compile</scope>
 		</dependency>
 
-
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.1.0</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+		
 	</dependencies>
 </project>
