@@ -9,7 +9,7 @@ public class ExcelUtilTest {
 	@Test
 	public void ExcelTest() {
 
-		Xls_Reader reader = new Xls_Reader("./src/main/java/com/excel/lib/util/SampleExcel.xlsx");
+		Xls_Reader reader = new Xls_Reader("./SampleExcel.xlsx");
 		String sheetName = "login";
 
 		System.out.println(reader.getCellData(sheetName, "username", 3));
