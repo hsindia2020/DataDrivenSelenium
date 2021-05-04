@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="excel.tests.LoginPage">
+      <class name="com.pcs.Synchronization.ImplicitWaitReal">
         <methods>
-          <include name="LoginTest"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- excel.tests.LoginPage -->
+      </class> <!-- com.pcs.Synchronization.ImplicitWaitReal -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
