@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pcs.Synchronization.ImplicitWaitReal">
+      <class name="TableGridScroll.ScrollTable">
         <methods>
-          <include name="f"/>
+          <include name="TableScroll"/>
         </methods>
-      </class> <!-- com.pcs.Synchronization.ImplicitWaitReal -->
+      </class> <!-- TableGridScroll.ScrollTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

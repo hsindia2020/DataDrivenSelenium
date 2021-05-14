@@ -1,4 +1,4 @@
-package com.pcs.Locators;
+package com.pcs.Synchronization;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class AddVeggiesToCart {
+public class ImplicitWebDriverWait {
 
 	static WebDriver driver;
 
@@ -25,7 +25,7 @@ public class AddVeggiesToCart {
 
 		driver.manage().window().maximize();
 
-		// Implicit wait will work globolly onl with class. its like class level
+		// Implicit wait will work globally with class. it will work on class level
 		// driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
 		String[] addItem = { "Potato", "Cauliflower", "Onion", "Tomato" };
@@ -83,12 +83,12 @@ public class AddVeggiesToCart {
 		driver.findElement(By.cssSelector("input[class='promoCode']")).sendKeys("rahulshettyacademy");
 		driver.findElement(By.xpath("//button[contains(text(),'Apply')]")).click();
 
-		// explicit wait only effect on below code only.
+		// explicit wait only effect on below code only. WebDriverWait is part of
+		// Explicit Wait..
 		// WebDriverWait wait = new WebDriverWait(driver, 5);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(".promoinfo")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span[class='promoInfo']")));
 
-		System.out.println(driver.findElement(By.className(".promoinfo")).getText());
-
+		System.out.println(driver.findElement(By.cssSelector("span[class='promoInfo']")).getText());
 	}
 
 }
