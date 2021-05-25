@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="AjaxChildWindowIframe.IframeTest">
+        <methods>
+          <include name="frame"/>
+        </methods>
+      </class> <!-- AjaxChildWindowIframe.IframeTest -->
+      <class name="com.pcs.Locators.ListAutocompleteTest">
+        <methods>
+          <include name="checkboxs"/>
+          <include name="Listlocators"/>
+        </methods>
+      </class> <!-- com.pcs.Locators.ListAutocompleteTest -->
+      <class name="com.pcs.Locators.CalenderLocatorTest">
+        <methods>
+          <include name="func"/>
+        </methods>
+      </class> <!-- com.pcs.Locators.CalenderLocatorTest -->
+      <class name="AjaxChildWindowIframe.ChildWindowTxtTrimTest">
+        <methods>
+          <include name="window"/>
+        </methods>
+      </class> <!-- AjaxChildWindowIframe.ChildWindowTxtTrimTest -->
+      <class name="com.pcs.Locators.DateSelectEnableDisableTest">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- com.pcs.Locators.DateSelectEnableDisableTest -->
+      <class name="AjaxChildWindowIframe.DragDropTest">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- AjaxChildWindowIframe.DragDropTest -->
+      <class name="com.pcs.Locators.LinkCountsTest">
+        <methods>
+          <include name="LinkCountsFooter"/>
+        </methods>
+      </class> <!-- com.pcs.Locators.LinkCountsTest -->
+      <class name="com.pcs.Locators.basicLocatorTest">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- com.pcs.Locators.basicLocatorTest -->
+      <class name="com.pcs.Locators.AssignCheckBoxTest">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- com.pcs.Locators.AssignCheckBoxTest -->
+      <class name="com.pcs.Locators.SwitchAlertTest">
+        <methods>
+          <include name="AlertSwitch"/>
+        </methods>
+      </class> <!-- com.pcs.Locators.SwitchAlertTest -->
+      <class name="com.pcs.Locators.opearLocatorTest">
+        <methods>
+          <include name="userNamePwd"/>
+        </methods>
+      </class> <!-- com.pcs.Locators.opearLocatorTest -->
+      <class name="AjaxChildWindowIframe.nestedFramesTest">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- AjaxChildWindowIframe.nestedFramesTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

@@ -55,18 +55,67 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 25 19:52:09 IST 2021</td>
+<td>Started on:</td><td>Fri May 21 19:06:24 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>109 seconds (109817 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8226 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td></td>
+<td>Included groups:</td><td>Function </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='javaStreams.LambdaExp.BasicKnow.StreamMatch()'><b>StreamMatch</b><br>Test class: javaStreams.LambdaExp.BasicKnow</td>
+<td><div><pre>java.lang.AssertionError: 
+	at javaStreams.LambdaExp.BasicKnow.StreamMatch(BasicKnow.java:139)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1126980276", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1126980276'><pre>java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:47)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:20)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:26)
+	at javaStreams.LambdaExp.BasicKnow.StreamMatch(BasicKnow.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>javaStreams.LambdaExp.BasicKnow@27a8c74e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,35 +124,55 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.pcs.Locators.ListLocator.Listlocators()'><b>Listlocators</b><br>Test class: com.pcs.Locators.ListLocator</td>
+<td title='javaStreams.LambdaExp.BasicKnow.ArrayList()'><b>ArrayList</b><br>Test class: javaStreams.LambdaExp.BasicKnow</td>
 <td></td>
-<td>15</td>
-<td>com.pcs.Locators.ListLocator@74650e52</td></tr>
+<td>0</td>
+<td>javaStreams.LambdaExp.BasicKnow@27a8c74e</td></tr>
 <tr>
-<td title='com.pcs.Locators.ListLocator.checkboxs()'><b>checkboxs</b><br>Test class: com.pcs.Locators.ListLocator</td>
+<td title='javaStreams.LambdaExp.BasicKnow.AssignStream()'><b>AssignStream</b><br>Test class: javaStreams.LambdaExp.BasicKnow</td>
 <td></td>
-<td>10</td>
-<td>com.pcs.Locators.ListLocator@74650e52</td></tr>
+<td>0</td>
+<td>javaStreams.LambdaExp.BasicKnow@27a8c74e</td></tr>
 <tr>
-<td title='com.pcs.Locators.AssignCheckBox.f()'><b>f</b><br>Test class: com.pcs.Locators.AssignCheckBox</td>
+<td title='javaStreams.LambdaExp.FilterFunc.funcs()'><b>funcs</b><br>Test class: javaStreams.LambdaExp.FilterFunc<br>Parameters: https://rahulshettyacademy.com/seleniumPractise/#/offers, //tr/td[1]</td>
 <td></td>
-<td>23</td>
-<td>com.pcs.Locators.AssignCheckBox@53f65459</td></tr>
+<td>8</td>
+<td>javaStreams.LambdaExp.FilterFunc@2d8f65a4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.pcs.Locators.basicLocator.f()'><b>f</b><br>Test class: com.pcs.Locators.basicLocator</td>
-<td></td>
-<td>17</td>
-<td>com.pcs.Locators.basicLocator@3b088d51</td></tr>
-<tr>
-<td title='com.pcs.Locators.DateSelectEnableDisable.f()'><b>f</b><br>Test class: com.pcs.Locators.DateSelectEnableDisable</td>
-<td></td>
-<td>20</td>
-<td>com.pcs.Locators.DateSelectEnableDisable@1786dec2</td></tr>
-<tr>
-<td title='com.pcs.Locators.selectDropdown.func()'><b>func</b><br>Test class: com.pcs.Locators.selectDropdown</td>
-<td></td>
-<td>23</td>
-<td>com.pcs.Locators.selectDropdown@15d0c81b</td></tr>
+<td title='javaStreams.LambdaExp.BasicKnow.streamCollect()'><b>streamCollect</b><br>Test class: javaStreams.LambdaExp.BasicKnow</td>
+<td><div><pre>java.lang.Throwable: Method BasicKnow.streamCollect(java.lang.String)[pri:0, instance:javaStreams.LambdaExp.BasicKnow@27a8c74e] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace950179732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace950179732'><pre>java.lang.Throwable: Method BasicKnow.streamCollect(java.lang.String)[pri:0, instance:javaStreams.LambdaExp.BasicKnow@27a8c74e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>javaStreams.LambdaExp.BasicKnow@27a8c74e</td></tr>
 </table><p>
 </body>
 </html>

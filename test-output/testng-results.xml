@@ -2,16 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12368" started-at="2021-05-13T21:54:26 IST" finished-at="2021-05-13T21:54:38 IST">
+  <suite name="Default suite" duration-ms="11790" started-at="2021-05-25T09:30:21 IST" finished-at="2021-05-25T09:30:33 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12368" started-at="2021-05-13T21:54:26 IST" finished-at="2021-05-13T21:54:38 IST">
-      <class name="com.pcs.Miscellaneous.BrokenLink">
-        <test-method status="PASS" signature="BrokenLk()[pri:0, instance:com.pcs.Miscellaneous.BrokenLink@2d6eabae]" name="BrokenLk" duration-ms="12275" started-at="2021-05-13T21:54:26 IST" finished-at="2021-05-13T21:54:38 IST">
+    <test name="Default test" duration-ms="11790" started-at="2021-05-25T09:30:21 IST" finished-at="2021-05-25T09:30:33 IST">
+      <class name="extentReports.basicReport">
+        <test-method status="PASS" signature="extentbase()[pri:0, instance:extentReports.basicReport@53f65459]" name="extentbase" is-config="true" duration-ms="448" started-at="2021-05-25T09:30:21 IST" finished-at="2021-05-25T09:30:21 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BrokenLk -->
-      </class> <!-- com.pcs.Miscellaneous.BrokenLink -->
+        </test-method> <!-- extentbase -->
+        <test-method status="PASS" signature="extentbasic()[pri:0, instance:extentReports.basicReport@53f65459]" name="extentbasic" duration-ms="11289" started-at="2021-05-25T09:30:21 IST" finished-at="2021-05-25T09:30:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentbasic -->
+      </class> <!-- extentReports.basicReport -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

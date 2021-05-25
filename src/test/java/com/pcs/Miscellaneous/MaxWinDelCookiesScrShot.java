@@ -19,6 +19,7 @@ public class MaxWinDelCookiesScrShot {
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		driver.manage().deleteCookieNamed("seci");
 
 		driver.get("https://www.google.com");
 

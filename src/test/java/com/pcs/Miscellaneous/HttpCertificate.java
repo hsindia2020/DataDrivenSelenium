@@ -1,5 +1,8 @@
 package com.pcs.Miscellaneous;
 
+import java.util.ArrayList;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -18,6 +21,7 @@ public class HttpCertificate {
 		// Desired capabilities=
 		// general chrome profile
 		DesiredCapabilities ch = DesiredCapabilities.chrome();
+
 		// ch.acceptInsecureCerts();
 		ch.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 		ch.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
@@ -34,8 +38,20 @@ public class HttpCertificate {
 		 * Above both Desired Capabilities and ChromeOptions class is different but work
 		 * together. ChromeOptions class use for local browser setting and Desired
 		 * Capabilities class is for general profile. Use the above script for where we
-		 * use SSL or HTTP certification validatoin require.
+		 * use SSL or HTTP certification validation require.
 		 */
+		driver.get("https://rahulshettyacademy.com/angularpractice/");
+
+		ArrayList<String> dd = new ArrayList<String>();
+		dd.add("Employee Name");
+		dd.add("employee@name.com");
+		dd.add("password123");
+
+		dd.stream()
+				.forEach(s -> driver.findElement(By.xpath("//div[@class='form-group'][1]/input")).sendKeys(dd.get(0)));
+		driver.findElement(By.xpath("//div[@class='form-group'][1]/input")).sendKeys(dd.get(0));
+		driver.findElement(By.xpath("//div[@class='form-group'][2]/input")).sendKeys(dd.get(1));
+		driver.findElement(By.xpath("//div[@class='form-group'][3]/input")).sendKeys(dd.get(2));
 
   }
 }

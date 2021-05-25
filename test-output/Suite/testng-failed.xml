@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="javaStreams.LambdaExp.Itestlist"/>
+  </listeners>
+  <test thread-count="4" name="Test(failed)" parallel="tests">
+    <parameter name="path" value="//tr/td[1]"/>
+    <parameter name="URL" value="https://rahulshettyacademy.com/seleniumPractise/#/offers"/>
+    <groups>
+      <run>
+        <include name="Function"/>
+      </run>
+    </groups>
     <classes>
-      <class name="excel.tests.LoginPage">
+      <class name="javaStreams.LambdaExp.BasicKnow">
         <methods>
-          <include name="LoginTest"/>
+          <include name="streamCollect"/>
+          <include name="StreamMatch"/>
         </methods>
-      </class> <!-- excel.tests.LoginPage -->
+      </class> <!-- javaStreams.LambdaExp.BasicKnow -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
